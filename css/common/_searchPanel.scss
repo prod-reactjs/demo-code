@@ -1,0 +1,47 @@
+.searchPanel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .5s;
+
+  &.expanded {
+    max-height: 100vh;
+    border-top: 1px solid #e8e8e8;
+    animation: searchExpanded 2s;
+    overflow: initial;
+  }
+
+  .datetime {
+    margin: 5px auto;
+    .rdt {
+      margin-right: 5px;
+    }
+    span {
+      margin-right: 5px;
+    }
+  }
+}
+
+@keyframes searchExpanded {
+  0% {
+    max-height: 0;
+    overflow: hidden;
+  }
+  99% {
+    max-height: 100vh;
+  }
+  100% {
+    max-height: 100vh;
+    overflow: initial;
+  }
+}
+
+@keyframes searchCollapsed {
+  0% {
+    max-height: 100vh;
+    overflow: initial;
+  }
+  100% {
+    max-height: 0;
+    overflow: hidden;
+  }
+}

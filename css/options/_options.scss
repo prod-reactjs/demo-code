@@ -1,0 +1,42 @@
+.options {
+  padding: 15px;
+  background: #fff;
+
+  .row {
+    // margin: 15px;
+    padding: 0 15px;
+
+    >div {
+      >div {
+        border: 1px solid #dde6e9;
+      }
+    }
+  }
+  .breadcrumb {
+    margin: 0 0 20px;
+    padding: 8px 15px;
+  }
+
+  .control {
+    margin-bottom: 8px;
+  }
+
+  .table-row {
+    margin: 0;
+    padding: 8px;
+    border-top: 1px solid #ddd;
+
+    >div {
+      padding: 0;
+    }
+  }
+
+  .flex {
+    justify-content: flex-end;
+    
+    button {
+      margin: 0 0 0 5px;
+    }
+  }
+}
+

@@ -1,0 +1,28 @@
+$main-bg-color: #036ded;
+
+$accent-blue: #036ded;
+$accent-blue-border: #036ded;
+$accent-blue-hover: #036ded;
+$accent-blue-border-hover: #036ded;
+
+$accent-gray: #e1e0dd;
+$accent-black: #35342f;
+$accent-orange: #ec6b2d;
+$accent-red: #f02e1b;
+$accent-pink: #ff3368;
+$accent-pink-border: #ff3368;
+$accent-pink-hover: #ff3368;
+$accent-pink-border-hover: #ff3368;
+
+.panel-primary {
+  border-color: $accent-gray;
+  .panel-heading {
+    background-color: $main-bg-color;
+    border-color: $main-bg-color;
+  }
+}
+
+.panel-box {
+  padding:10px;
+  margin-bottom:10px;
+}

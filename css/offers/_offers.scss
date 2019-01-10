@@ -1,0 +1,61 @@
+.offers {
+  .amounts {
+    display: flex;
+    flex-wrap: wrap;
+    span {
+      margin-top: 10px;
+    }
+  }
+  .contacts-content {
+    .contact-row {
+      min-height: initial;
+
+      >div {
+        min-height: 44px;
+      }
+    }
+  }
+
+  &.create {
+    background: #fff;
+  }
+
+  &.info {
+    .row {
+      margin: 0;
+      .row {
+        margin: 10px 0;
+        padding: 10px;
+        background: #fff;
+      }
+    }
+
+    .offers-header {
+      margin-top: 5px;
+      
+      h3 {
+        color: #1ac6ff;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .total {
+        margin-top: 2px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+        span {
+          padding: .2em .6em .3em;
+          border-radius: .25em;
+          background: #ff3368;
+          color: #fff;
+          font-size: 75%;
+          font-weight: bold;
+        }
+      }
+      .viewManagement {
+        margin: 10px;
+      }
+    }
+
+  }
+
+}

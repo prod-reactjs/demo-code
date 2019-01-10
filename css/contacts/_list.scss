@@ -1,0 +1,268 @@
+@import "../mixins";
+
+.contacts-content {
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  // box-shadow: 0px 1px 2px 0px rgba(128, 128, 128, .75);
+
+  &.panel-box {
+    margin: 15px 0;
+    padding: 10px 0 0;
+  }
+
+  &.list {
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden;
+
+    .contact-row {
+      word-break: break-all;
+      &:last-child {
+        border-radius: 0 0 5px 5px;
+      }
+
+      &.new {
+        div {
+          color: #449d44;
+        }
+      }
+    }
+
+    .fa-star {
+      color: #ff3368;
+      cursor: pointer;
+
+      &:hover {
+        color: rgba(53, 52, 80, 0.6);
+      }
+    }
+
+    .fa-circle-o {
+      margin-right: 10px;
+    }
+
+    .fa-star-o {
+      cursor: pointer;
+
+      &:hover {
+        color: #ff3368;
+      }
+    }
+  }
+
+  .breadcrumb {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      text-transform: capitalize;
+    }
+  }
+
+  &.contacts-centered {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .total {
+    span {
+      padding: .2em .6em .3em;
+      border-radius: .25em;
+      background: #ff3368;
+      color: #fff;
+      font-size: 10px;
+      font-weight: bold;
+    }
+  }
+
+  .table-header {
+    @include xs() {
+      padding: 10px;
+    }
+    margin: 0;
+    padding: 20px 30px;
+    background: #036ded;
+
+    .column {
+      padding: 0;
+    }
+  }
+
+  .landlordStatements {
+    form {
+      padding-top: 30px;
+      .row {
+        >div {
+          margin-bottom: 10px;
+        }
+      }
+
+      .control-label {
+        margin-top: 8px;
+        font-family: Raleway;
+        font-size: 11px;
+        font-weight: 600;
+        text-align: left;
+        color: #353450;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .contact-row {
+    @include xs() {
+      padding: 10px;
+    }
+    margin: 0;
+    padding: 20px 30px;
+    border-bottom: 1px solid rgba(233, 233, 233, .6);
+    // box-shadow: 0px 1px 3px 0px rgba(128, 128, 128, .75);
+
+    >div {
+      @include sm() {
+        height: initial;
+      }
+      // display: flex;
+      align-items: center;
+      height: 80px;
+      font-family: Raleway;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: left;
+      // color: rgba(53, 52, 80, 0.6);
+      color: #353450;
+      cursor: default;
+
+      span {
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: left;
+        color: #353450;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+
+    button {
+      margin: 5px 0 5px 5px;
+    }
+
+    .glyphicon {
+      color: #ccc;
+      font-family: "Glyphicons Halflings";
+      font-size: 14px;
+      font-weight: normal;
+
+      &:hover {
+        color: #000;
+      }
+    }
+
+    .glyphicon-ok {
+      color: #ccc;
+
+      &:hover {
+        color: #449d44;
+      }
+
+      &.active {
+        color: #449d44;
+
+        &:hover {
+          color: #ccc;
+        }
+      }
+    }
+
+    .glyphicon-envelope {
+      &:hover {
+        color: #036ded;
+      }
+    }
+
+    .glyphicon-download {
+      &:hover {
+        color: #036ded;
+      }
+    }
+
+    .glyphicon-remove-circle {
+      &:hover {
+        color: #ff3368;
+      }
+    }
+
+    &:hover {
+      background: #fdfdfd;
+    }
+
+    &.management {
+      min-height: initial;
+      >div {
+        min-height: 44px;
+      }
+    }
+
+    &.rent {
+      min-height: initial;
+      >div {
+        min-height: initial;
+      }
+    }
+  }
+
+  img {
+    @include xs() {
+      width: 90px;
+      height: 72px;
+    }
+
+    width: 100px;
+    height: 80px;
+  }
+
+  .status1 {
+    >div {
+      width: 25px;
+      height: 25px;
+      background: #008100;
+      border-radius: 50%;
+    }
+  }
+
+  .status3 {
+    >div {
+      width: 25px;
+      height: 25px;
+      background: #ffa600;
+      border-radius: 50%;
+    }
+  }
+
+  .status4 {
+    >div {
+      width: 25px;
+      height: 25px;
+      background: #ff0000;
+      border-radius: 50%;
+    }
+  }
+
+  .status6 {
+    >div {
+      width: 25px;
+      height: 25px;
+      background: #ff0000;
+      border-radius: 50%;
+    }
+  }
+}

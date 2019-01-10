@@ -1,0 +1,163 @@
+.register-form {
+  margin: 15px auto;
+  padding: 15px;
+  max-width: 376px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+
+  .logo {
+    max-width: 257px;
+    margin-bottom: 20px;
+  }
+
+  .register-block {
+    @media screen and (min-width: 376px) {
+      width: 376px;
+    }
+    max-width: 376px;
+    border: 1px solid #ddd;
+    background: #fff;
+    
+    h3 {
+      margin-bottom: 30px;
+      padding: 28px 0 25px;
+      border-radius: 3px 3px 0 0;
+      background: #036ded;
+      color: #fff;
+      font-family: Raleway;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+    }
+    main {
+      padding: 0 31px;
+    }
+    .form-group {
+      margin-bottom: 10px;
+
+      .form-control {
+        border-color: #ccc;
+        border-radius: 3px;
+      }
+
+      label {
+        color: #353450;
+        font-family: Raleway;
+        font-size: 11px;
+        font-weight: 600;
+        text-align: left;
+
+        .Terms {
+          text-transform: uppercase;
+        }
+      }
+      &.form-checkbox {
+        max-height: 54px;
+        padding: 0;
+
+        input {
+          display: none;
+          
+          +label {
+            height: 34px;
+
+            span {
+              margin-left: 5px;
+              font-family: Raleway;
+              font-size: 11px;
+              font-weight: 600;
+              text-align: left;
+              color: #353450;
+              white-space: nowrap;
+            }
+          }
+
+          &:not(:checked) {
+            +label {
+              display: flex;
+              margin: 0;
+              font-family: FontAwesome;
+              font-size: 16px;
+              font-weight: normal;
+              line-height: 34px;
+
+              &:before {
+                content: "";
+                display: block;
+                min-width: 34px;
+                max-width: 34px;
+                height: 34px;
+                border: 1px solid #036ded;
+                border-radius: 3px;
+                box-sizing: border-box;
+                transition: background-color 0.4s linear;
+              }
+            }
+          }
+
+          &:checked {
+            +label {
+              display: flex;
+              margin: 0;
+              font-family: FontAwesome;
+              font-size: 16px;
+              font-weight: normal;
+              line-height: 34px;
+
+              &:before {
+                content: "\f00c";
+                display: block;
+                // justify-content: center;
+                min-width: 34px;
+                max-width: 34px;
+                height: 34px;
+                padding-left: 8px;
+                border: 1px solid #036ded;
+                border-radius: 3px;
+                box-sizing: border-box;
+                background: #036ded;
+                color: #fff;
+                transition: background-color 0.4s linear;
+              }
+            }
+          }
+        }
+
+        &.list {
+          label {
+            height: 34px;
+
+            &:before {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    button {
+      margin: 30px 0;
+      border-color: #036ded;
+      border-radius: 0;
+      color: #036ded;
+      font-family: Raleway;
+      font-size: 13px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+
+  p {
+    margin-top: 30px;
+    color: #353450;
+    font-family: Raleway;
+    font-size: 13px;
+    text-align: center;
+
+    a {
+      color: #036ded;
+    }
+  }
+
+}

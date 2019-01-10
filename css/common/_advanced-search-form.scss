@@ -1,0 +1,15 @@
+.advanced-form {
+  &.advanced-opened {
+    display: block;
+  }
+  &.advanced-closed {
+    display: none;
+    max-height: 0;
+  }
+}
+
+h3.search-header {
+  color: $accent-blue;
+  margin-top:10px;
+  border-bottom: 1px solid $accent-blue;
+}

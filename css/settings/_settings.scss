@@ -1,0 +1,35 @@
+.settings {
+  // >.row {
+  //   background: #fff;
+  // }
+  // .row {
+  //   padding: 15px;
+  // }
+
+  .upload-manager {
+    display: flex;
+    flex-grow: 1;
+    // justify-content: flex-end;
+    margin-right: 5px;
+
+    .upload {
+      margin-left: 15px;
+      border: 1px dashed #2D527C; 
+      background: rgba(0, 0, 0, 0);
+
+      img {
+        pointer-events: none;
+      }
+    }
+
+    .progress {
+      flex-grow: 1;
+      margin-right: 5px;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

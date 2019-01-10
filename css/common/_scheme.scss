@@ -1,0 +1,54 @@
+.btn-primary {
+  color: #fff;
+  background-color: $accent-blue;
+  border-color: $accent-blue-border;
+
+  &:hover, &:active {
+    background-color: $accent-blue-hover;
+    border-color: $accent-blue-border-hover;
+  }
+}
+
+.btn-info {
+  color: #fff;
+  background-color: $accent-blue;
+  border-color: $accent-blue-border;
+
+  &:hover, &:active {
+    background-color: $accent-blue-hover;
+    border-color: $accent-blue-border-hover;
+  }
+}
+
+.table-header .column{
+  background: $accent-blue;
+  display:block;
+  padding:5px;
+  color:#fff;
+}
+
+.btn-pink {
+  color: #fff;
+  background-color: $accent-pink;
+  border-color: $accent-pink-border;
+
+  &:hover, &:active {
+    background-color: $accent-pink-hover;
+    border-color: $accent-pink-border-hover;
+  }
+}
+
+.col-no-left {
+  padding-left: 0;
+}
+
+.col-no-right {
+  padding-right: 0;
+}
+
+.input-list {
+  .form-group {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
